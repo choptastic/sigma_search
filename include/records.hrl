@@ -1,0 +1,15 @@
+-record(sigma_search, {?ELEMENT_BASE(element_sigma_search),
+						delegate,
+						placeholder="",
+						tag,
+						textbox_class="",
+						search_button_class="",
+						search_button_text="Search",
+						clear_class="",
+						clear_text="Clear",
+						results_class="",
+						results_summary_text="~p search results for \"~s\"",
+						results_summary_class="",
+						x_button_text="X",
+						x_button_class=""
+		}).
