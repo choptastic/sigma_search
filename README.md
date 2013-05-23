@@ -53,6 +53,23 @@ sigma_search_event(Tag, SearchText) ->
 number of results returned (an integer), and the second being Nitrogen or 
 HTML elements.
 
+## Element Attributes
+
++ `tag` = The `Tag` value that will be passed to `Module:sigma_search_event/2`
++ `placeholder` = Placeholder text for the textbox. (ex: "Search by player name or email")
++ `delegate` = The module to post the `sigma_search_event/2` function
++ `class` = The class of the wrapper div
++ `textbox_class` = The class of the search textbox
++ `search_button_class` = The class of the "Search" button
++ `search_button_text` = The text to go into the Search button (default: `"Search"`)
++ `clear_button_class` = The class of the "Clear Search Results" button
++ `clear_button_text` = The text of the "Clear Search Results" button (default: "Clear")
++ `x_button_class` = In the corner of the search results displays an "X" button to close the search results and reset the form.  This is the class for that button.
++ `x_button_text` = The text of the "X" button (default "X")
++ `results_class` = The class of the div for the search results
++ `results_summary_text` = An `io_lib:format`ted string for displaying both the number of results and the search text. Default `"~p search results for \"~s\""`
++ `results_summary_class` = The class of the "Results Summary" above
+
 ## License
 
 Copyright (c) 2013, [Jesse Gumm](http://sigma-star.com/page/jesse)
