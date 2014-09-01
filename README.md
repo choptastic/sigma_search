@@ -1,6 +1,6 @@
 # sigma_search
 
-A search form [Nitrogen Web Framework](http://nitrogenoproject.com)
+A search form [Nitrogen Web Framework](http://nitrogenproject.com)
 
 ## Installing into a Nitrogen Application
 
