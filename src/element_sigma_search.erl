@@ -57,8 +57,8 @@ render_element(Rec = #sigma_search{
 		x_button_class=XButtonClass
 	},
 
-	[
-		#panel{class=[sigma_search, WrapperClass], style=Style, body=[
+    #panel{class=[sigma_search, WrapperClass], style=Style, body=[
+		#panel{body=[
 			#textbox{
 				class=[sigma_search_textbox, TextboxClass],
 				postback=Postback,
@@ -93,7 +93,7 @@ render_element(Rec = #sigma_search{
             class=[sigma_search_results, ResultsClass],
             style="display:none"
         }
-	].
+	]}.
 
 event(#postback{
 		delegate=Delegate,
