@@ -1,0 +1,21 @@
+.sigma_search_results {
+	padding-top:20px;
+	position:absolute;
+	top:30px;
+	left:0;
+	width:100%;
+	border:1px solid #777;
+	background: #eee;
+	z-index: 1000;
+}
+
+.sigma_search_x_button {
+	position:absolute;
+	right:0;
+	top:0;
+}
+
+.sigma_search {
+	position:relative;
+	z-index: 100;
+}

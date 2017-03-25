@@ -57,7 +57,7 @@ render_element(Rec = #sigma_search{
 	},
 
 	[
-		#panel{class=WrapperClass,body=[
+		#panel{class=[sigma_search, WrapperClass],body=[
 			#textbox{
 				class=[sigma_search_textbox, TextboxClass],
 				postback=Postback,
