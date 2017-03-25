@@ -58,14 +58,13 @@ render_element(Rec = #sigma_search{
 	},
 
 	[
-		#panel{class=[sigma_search, WrapperClass],body=[
+		#panel{class=[sigma_search, WrapperClass], style=Style, body=[
 			#textbox{
 				class=[sigma_search_textbox, TextboxClass],
 				postback=Postback,
 				delegate=?MODULE,
 				id=Textboxid,
 				placeholder=Placeholder,
-                style=Style,
 				actions=[
 					#event{type=keydown,postback=Postback,delegate=?MODULE}
 				]
