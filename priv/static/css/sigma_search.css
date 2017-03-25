@@ -1,10 +1,10 @@
 .sigma_search_results {
 	padding-top:20px;
-	position:absolute;
-	top:50px;
+	position:relative;
 	border:1px solid #777;
 	background: #eee;
 	z-index: 1000;
+	top:30px;
 }
 
 .sigma_search_x_button {

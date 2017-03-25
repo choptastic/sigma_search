@@ -86,13 +86,13 @@ render_element(Rec = #sigma_search{
 					#fade{target=Resultsid},
 					#fade{target=Clearid}
 				]
-			},
-            #panel{
-                id=Resultsid,
-                class=[sigma_search_results, ResultsClass],
-                style="display:none"
-            }
-		]}
+			}
+		]},
+        #panel{
+            id=Resultsid,
+            class=[sigma_search_results, ResultsClass],
+            style="display:none"
+        }
 	].
 
 event(#postback{
