@@ -1,9 +1,7 @@
 .sigma_search_results {
 	padding-top:20px;
 	position:absolute;
-	top:30px;
-	left:0;
-	width:100%;
+	top:50px;
 	border:1px solid #777;
 	background: #eee;
 	z-index: 1000;
