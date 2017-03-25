@@ -36,7 +36,8 @@ render_element(Rec = #sigma_search{
 		results_summary_text=ResultsSummaryText,
 		results_summary_class=ResultsSummaryClass,
 		x_button_class=XButtonClass,
-		x_button_text=XButtonText
+		x_button_text=XButtonText,
+        style=Style
 		}) ->
 	Textboxid = wf:temp_id(),
 	Resultsid = wf:temp_id(),
@@ -64,6 +65,7 @@ render_element(Rec = #sigma_search{
 				delegate=?MODULE,
 				id=Textboxid,
 				placeholder=Placeholder,
+                style=Style,
 				actions=[
 					#event{type=keydown,postback=Postback,delegate=?MODULE}
 				]
