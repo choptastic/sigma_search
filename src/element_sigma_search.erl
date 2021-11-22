@@ -36,7 +36,8 @@ render_element(Rec = #sigma_search{
 		results_summary_text=ResultsSummaryText,
 		results_summary_class=ResultsSummaryClass,
 		x_button_class=XButtonClass,
-		x_button_text=XButtonText
+		x_button_text=XButtonText,
+        style=Style
 		}) ->
 	Textboxid = wf:temp_id(),
 	Resultsid = wf:temp_id(),
@@ -56,8 +57,8 @@ render_element(Rec = #sigma_search{
 		x_button_class=XButtonClass
 	},
 
-	[
-		#panel{class=WrapperClass,body=[
+    #panel{class=[sigma_search, WrapperClass], style=Style, body=[
+		#panel{body=[
 			#textbox{
 				class=[sigma_search_textbox, TextboxClass],
 				postback=Postback,
@@ -87,12 +88,12 @@ render_element(Rec = #sigma_search{
 				]
 			}
 		]},
-		#panel{
-			id=Resultsid,
-			class=[sigma_search_results, ResultsClass],
-			style="display:none"
-		}
-	].
+        #panel{
+            id=Resultsid,
+            class=[sigma_search_results, ResultsClass],
+            style="display:none"
+        }
+	]}.
 
 event(#postback{
 		delegate=Delegate,
